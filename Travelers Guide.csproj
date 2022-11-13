@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8DC55C08-BCC0-400C-8A7B-FFC7390E7520}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Travelers_Guide</RootNamespace>
+    <AssemblyName>Travelers Guide</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DashboardDestinationHistorical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardDestinationHistorical.Designer.cs">
+      <DependentUpon>DashboardDestinationHistorical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardDestinationHillSide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardDestinationHillSide.Designer.cs">
+      <DependentUpon>DashboardDestinationHillSide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardDestinationSeaBeach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardDestinationSeaBeach.Designer.cs">
+      <DependentUpon>DashboardDestinationSeaBeach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardDestination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardDestination.Designer.cs">
+      <DependentUpon>DashboardDestination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardBooking.Designer.cs">
+      <DependentUpon>DashboardBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardAdmin.Designer.cs">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardHotelBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardHotelBook.Designer.cs">
+      <DependentUpon>DashboardHotelBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardProfile.Designer.cs">
+      <DependentUpon>DashboardProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardHotel.Designer.cs">
+      <DependentUpon>DashboardHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardTransport.Designer.cs">
+      <DependentUpon>DashboardTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardHome.Designer.cs">
+      <DependentUpon>DashboardHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Travel_Management_SystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Travel_Management_SystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DashboardDestinationHistorical.resx">
+      <DependentUpon>DashboardDestinationHistorical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardDestinationHillSide.resx">
+      <DependentUpon>DashboardDestinationHillSide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardDestinationSeaBeach.resx">
+      <DependentUpon>DashboardDestinationSeaBeach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardDestination.resx">
+      <DependentUpon>DashboardDestination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardBooking.resx">
+      <DependentUpon>DashboardBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardAdmin.resx">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardHotelBook.resx">
+      <DependentUpon>DashboardHotelBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardProfile.resx">
+      <DependentUpon>DashboardProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardHotel.resx">
+      <DependentUpon>DashboardHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardTransport.resx">
+      <DependentUpon>DashboardTransport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardHome.resx">
+      <DependentUpon>DashboardHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Travel_Management_SystemDataSet.xsc">
+      <DependentUpon>Travel_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Travel_Management_SystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Travel_Management_SystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Travel_Management_SystemDataSet.xss">
+      <DependentUpon>Travel_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Historical.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kuakata.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lalbagh Fort.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mahasthangarh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nilgiri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nothing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProfilePanelBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saint Martin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sajek Valley.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sea Beach Blur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sea Beach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ahsan Manzil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boga Lake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bus 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bus 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bus 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BusSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coxs Bazar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Destination.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DestinationPanelBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DestinationPanelBlack1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hill Side Blur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hill Side.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Historical Blur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dummy Pic Destination.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Booking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Long Beach Hotel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prism Hotel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dummy Pic Hotel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black Panel Hotel Bus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Single Room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double Room.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Suite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avenue Hotel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radisson Blu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotel Hilton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nilgiri Resort.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chayanir Eco Resort.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sajek Resort.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Intercontinental Hotel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pan Pacific Hotel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FARS Hotel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotel Naz Garden.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Momo Inn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Royal Tulip Hotel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotel Graver Inn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kuakata Garden Hotel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shayari Eco Resort.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sunset Serenity Resort.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
